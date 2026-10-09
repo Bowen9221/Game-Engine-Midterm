@@ -8,6 +8,7 @@ public class P_InputSystemHandler : MonoBehaviour
 {
     [SerializeField] private InputActionAsset _inputSystem;
     [SerializeField] Rigidbody2D _rb;
+    [SerializeField] Bubble_Spawner bubbleSpawner;
 
     private P_Player player;
     //[SerializeField] E_Base_Enemy _enemy;
@@ -36,6 +37,7 @@ public class P_InputSystemHandler : MonoBehaviour
         _moveAction = InputSystem.actions.FindAction("Move");
         _attackAction = InputSystem.actions.FindAction("Attack");
         _jumpAction = InputSystem.actions.FindAction("Jump");
+        bubbleSpawner = FindAnyObjectByType<Bubble_Spawner>();
     }
 
     
@@ -91,6 +93,7 @@ public class P_InputSystemHandler : MonoBehaviour
     {
         
         _isAttacking = true;
+        bubbleSpawner.SpawnBubble();
         yield return new WaitForSeconds(_animationDuration);
         _isAttacking = false;
 

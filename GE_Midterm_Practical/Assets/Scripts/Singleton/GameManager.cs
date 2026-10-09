@@ -12,7 +12,6 @@ namespace Chapter.Singleton
         private bool _has30sTrophy;
         private bool _has1mTrophy;
         private bool _has6mTrophy;
-        //private bool _killedtwoenemies;
 
         private void Start()
         {

@@ -116,8 +116,8 @@ MonoBehaviour:
     y: 0
     width: 998.4
     height: 459.2
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 226}
+  m_MaxSize: {x: 4002, y: 4026}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -320,14 +320,15 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs:
-      - m_Data: 79714
+      m_SelectedIDs: []
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -75726
-      - m_Data: -74858
-      - m_Data: -61820
+      - m_Data: -64522
+      - m_Data: -64266
+      - m_Data: -63588
+      - m_Data: -62906
+      - m_Data: -61926
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -799,7 +800,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Factory
+    - Assets
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -809,22 +810,21 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Factory
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\bowen\Documents\GitHub\Game Engine Midterm\GE_Midterm_Practical
   m_LockTracker:
     m_IsLocked: 0
   m_LastLocalAssetsSearchArea: 1
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 12.400024}
+    scrollPos: {x: 0, y: 0}
     m_SelectedIDs:
-    - m_Data: 78600
+    - m_Data: 68372
     m_LastClickedID:
-      m_Data: 78600
+      m_Data: 68372
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 68306
-    - m_Data: 78584
+    - m_Data: 68372
     - m_Data: 1000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -883,9 +883,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs:
-    - m_Data: 79714
-    m_LastClickedInstanceID: 79714
+    m_SelectedInstanceIDs: []
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: []
     m_RenameOverlay:
@@ -955,21 +954,18 @@ MonoBehaviour:
     m_DynamicPanelContainerData: []
     m_OverlaysVisible: 1
     m_DynamicPanelBehavior: 0
-  m_ObjectsLockedBeforeSerialization:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  m_InstanceIDsLockedBeforeSerialization: 0cd8feff
+  m_ObjectsLockedBeforeSerialization: []
+  m_InstanceIDsLockedBeforeSerialization: 
   m_PreviewResizer:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 751.19995
+  m_LastVerticalScrollValue: 1036.7999
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
-    m_IsLocked: 1
+    m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
 --- !u!114 &17
 MonoBehaviour:
@@ -1552,9 +1548,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 1.1958429, y: -0.35102275, z: 0.028353455}
+    m_Target: {x: -0.7166228, y: -1.4568498, z: 0.056342237}
     speed: 2
-    m_Value: {x: 1.1958429, y: -0.35102275, z: 0.028353455}
+    m_Value: {x: -0.7166228, y: -1.4568498, z: 0.056342237}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1604,9 +1600,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 7.16463
+    m_Target: 4.365769
     speed: 2
-    m_Value: 7.16463
+    m_Value: 4.365769
   m_Ortho:
     m_Target: 1
     speed: 2

@@ -33,7 +33,9 @@ public class E_Base_Enemy : MonoBehaviour
     [SerializeField] protected float _moveSpeed;
     [SerializeField] protected int _attackDamage;
 
-    [SerializeField] private Transform _patrolPoints[];
+    [SerializeField] private Transform[] _patrolPoints;
+
+    private bool _isTrapped = false;
 
 
 
@@ -44,6 +46,11 @@ public class E_Base_Enemy : MonoBehaviour
         player = FindAnyObjectByType<P_Player>();
         _player = player.transform;
         //_eventManager = FindAnyObjectByType<M_Event_Manager>();
+    }
+
+    public void Trapped()
+    {
+        enemyState = STATE.Trapped;
     }
 
     private void Spawning()
@@ -57,6 +64,15 @@ public class E_Base_Enemy : MonoBehaviour
         if (Vector2.Distance(_player.gameObject.transform.position, gameObject.transform.position) > _attackRange)
         {
             _canAttack = true;
+        }
+
+        if (transform.position == _patrolPoints[0].position)
+        {
+            _rb.AddForce(_patrolPoints[1].position.normalized * _moveSpeed, ForceMode2D.Force);
+        }
+        else if (transform.position == _patrolPoints[1].position)
+        {
+            _rb.AddForce(_patrolPoints[0].position.normalized * _moveSpeed, ForceMode2D.Force);
         }
         
     }
@@ -91,9 +107,9 @@ public class E_Base_Enemy : MonoBehaviour
 
     private void GetTrapped()
     {
-        if (P_InputSystemHandler)
+        if (_isTrapped)
         {
-
+            _moveSpeed = 0;
         }
     }
 
@@ -136,6 +152,12 @@ public class E_Base_Enemy : MonoBehaviour
     public int GetHealth()
     {
         return _health;
+    }
+
+    public bool SetIsTrapped(bool isTrapped)
+    {
+        _isTrapped = isTrapped;
+        return isTrapped;
     }
 
     
